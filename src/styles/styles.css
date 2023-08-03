@@ -18,24 +18,40 @@ h1, h2, p{
 }
 
 .modal{
-  background-color: #2c2c2c;
+  background-color: #404040;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   /* padding: 24px 24px 0px 24px; */
-  width: 80vw;
+  width: 100vw;
   min-height: 90vh;
   /* max-width: 600px; */
-  max-height: 600px;
+  /* max-height: 600px; */
   position: fixed;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, .14), 0px 2px 12px rgba(0, 0, 0, .06);
   z-index: 20;
   border-radius: 16px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0px;
+  transform: translate(-50%, 0%);
+  transition: transform 0.35s ease;
 }
 
+.modal-close-button{
+  position: absolute;
+  left: 50%;
+  top: -24px;
+  transform: translateX(-50%);
+  border:none;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 100rem;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, .14), 0px 2px 12px rgba(0, 0, 0, .06);;
+
+}
 .info-section{
   padding: 24px 0px 24px 24px;
 }
@@ -65,7 +81,7 @@ h1, h2, p{
 }
 
 .hide{
-  display: none;
+  transform: translate(-50%, 110%);
 }
 
 .inner-modal{

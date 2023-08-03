@@ -18,7 +18,7 @@ function Month(props) {
       {/* -----------MODAL------------- */}
       <div className={`modal ${hide ? "hide" : ""}`}>
         <div className="info-section">
-          <button onClick={() => setHide(true)}>x</button>
+          <button className="modal-close-button" onClick={() => setHide(true)}>x</button>
           <h2 className="title-modal">Design system LEGO Education</h2>
           <p className="description-modal">Creating a single source of truth across experiences</p>
           <ul className="project-tags">
