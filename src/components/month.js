@@ -2,6 +2,7 @@ import * as React from "react"
 import {useState} from "react"
 import "../styles/styles.css"
 import close from "../images/close.svg"
+import memiHero from "../images/MEMI-hero.png"
 
 
 function Month(props) {
@@ -32,7 +33,8 @@ function Month(props) {
           </div>
 
           <div className="hero-image-container">
-            <div className="image-placeholder hero-image"></div>
+            <img src={memiHero}></img>
+            {/* <div className="image-placeholder hero-image"></div> */}
           </div>
        
           <div className="case-text-container">
@@ -114,11 +116,11 @@ function Month(props) {
           <div className="title-container">
             <h3>{props.title}</h3>
 
-            <div className="tag-container">
+            {/* <div className="tag-container">
             <ul className="tag-list">
               <li className="tag-item">{props.tag}</li>
             </ul>
-          </div>
+          </div> */}
           </div>
           
         </div>

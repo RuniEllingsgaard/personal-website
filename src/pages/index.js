@@ -48,7 +48,7 @@ const IndexPage = () => {
         label="#case"
         caseImage={legologo}
         title="LEGO Collaboration"
-        tag="#designsystem"
+        tag=""
         row="three"
         brief="Since 2017 I have been a close collaborator at the LEGO Group, working with over 5 departments. My focus has been on digitizing internal workflows and tools, as well as concepting and designing new customer-facing experiences. While I am proud of this long partnership, I am currently unable to share further information."
         process=""
@@ -64,7 +64,7 @@ const IndexPage = () => {
         label="#case"
         caseImage={memi}
         title="Mediehusene Midtjylland"
-        tag="#designsystem"
+        tag=""
         row="one"
         brief="Mediehusene Midtjylland faced a customer decline issue as their readership aged, struggling to attract new and younger subscribers to their platform. The solution was to experiment with different digital formats."
         process="To contextualize the local newspapers, we conducted extensive user research in the surrounding areas to understand news consumption habits. This research formed the foundation for all future design efforts. We redesigned their online newspaper, launched 5+ local MVP micro online newspapers, and rebuilt their app from scratch. Mediehusene Midtjylland is still on their digital journey, working diligently to launch all of these efforts and embrace their digital transformation."
