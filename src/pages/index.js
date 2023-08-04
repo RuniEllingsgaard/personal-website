@@ -24,19 +24,20 @@ const IndexPage = () => {
         <div className="nav-container">
           <span>About me</span>
           <div className="contact-container">
-            <span className="site-contact">Contact</span>
+            <button className="site-contact-button">Contact</button>
           </div>
         </div>
       </div>
-      <div className="filter-container">
-     
+
+      {/* <div className="filter-container">
         <ul className="filter-items">
           <li className="filter-active">All</li>
           <li>Cases</li>
           <li>Thoughts</li>
           <li>Experiments</li>
         </ul>
-      </div>
+      </div> */}
+
       <div className="calendar-container">
 
       <Month 

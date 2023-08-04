@@ -1,6 +1,7 @@
 import * as React from "react"
 import {useState} from "react"
 import "../styles/styles.css"
+import close from "../images/close.svg"
 
 
 function Month(props) {
@@ -17,6 +18,56 @@ function Month(props) {
        
       {/* -----------MODAL------------- */}
       <div className={`modal ${hide ? "hide" : ""}`}>
+          <button className="modal-close-button" onClick={() => setHide(true)}><img src={close}></img></button>
+          <div className="inner-modal">
+          <div className="case-intro">
+          <h2 className="title-modal">LEGO Education</h2>
+          <p className="description-modal">Creating a single source of truth across experiences</p>
+          <ul className="project-tags">
+            <li>ux/ui</li>
+            <li>stakeholder management</li>
+            <li>research</li>
+            <li>strategy</li>
+          </ul>
+          </div>
+
+          <div className="hero-image-container">
+            <div className="image-placeholder hero-image"></div>
+          </div>
+       
+          <div className="case-text-container">
+            <section className="case-text">
+            <h3>Brief</h3>
+            <p>{props.brief}</p>
+            </section>
+        
+            <section className="case-text">
+            <h3>Process</h3>
+            <p>{props.process}</p>
+            </section>
+
+            <section className="case-text">
+            <h3>My Role</h3>
+            <p>{props.role}</p>
+            </section>
+      
+            <section className="case-text">
+            <h3>Team</h3>
+            <p>{props.team}</p>
+            </section>
+          </div>
+       
+
+        <div className="image-section">
+          {/* <div className="image-placeholder"></div> */}
+        </div>
+        </div>
+      </div>
+      {/* -----------MODAL END------------- */}
+      
+      
+      {/* -----------MODAL------------- */}
+      {/* <div className={`modal ${hide ? "hide" : ""}`}>
         <div className="info-section">
           <button className="modal-close-button" onClick={() => setHide(true)}>x</button>
           <h2 className="title-modal">Design system LEGO Education</h2>
@@ -48,7 +99,7 @@ function Month(props) {
           <div className="image-placeholder"></div>
           <div className="image-placeholder"></div>
         </div>
-      </div>
+      </div> */}
       {/* -----------MODAL END------------- */}
   
           

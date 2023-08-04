@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
+*{
+  box-sizing: border-box;
+}
+
+button{
+  padding: 0;
+}
+
 body{
   margin: 0px;
   padding: 0px;
@@ -7,6 +15,7 @@ body{
   /* overflow: scroll; */
   color: #f8f8f8;
   background-color: #1a1a1a;
+  /* background-color: #121212; */
 }
 
 h1, h2, p, ul{
@@ -18,22 +27,17 @@ h1, h2, p{
 }
 
 .modal{
-  background-color: #404040;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  /* padding: 24px 24px 0px 24px; */
+  background-color: #252525;
+  border: 1px solid #404040;
   width: 100vw;
-  min-height: 90vh;
-  /* max-width: 600px; */
-  /* max-height: 600px; */
+  height: 90vh;
   position: fixed;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, .14), 0px 2px 12px rgba(0, 0, 0, .06);
   z-index: 20;
   border-radius: 16px;
-  left: 50%;
   bottom: 0px;
-  transform: translate(-50%, 0%);
+  left: 50%;
+  transform: translate(-50%,0%);
   transition: transform 0.35s ease;
 }
 
@@ -44,13 +48,25 @@ h1, h2, p{
   transform: translateX(-50%);
   border:none;
   background-color: #fff;
-  padding: 16px;
+  /* padding: 16px; */
+  padding-top: 2px;
   border-radius: 100rem;
   width: 48px;
   height: 48px;
   cursor: pointer;
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, .14), 0px 2px 12px rgba(0, 0, 0, .06);;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, .14), 0px 2px 12px rgba(0, 0, 0, .06);
+  transition: all 0.15s ease;
+}
 
+.modal-close-button img{
+  transition: 0.15s ease;
+}
+ .modal-close-button:hover img{
+  transform: rotate(90deg)
+ }
+
+.case-intro{
+  margin-bottom: 84px;
 }
 .info-section{
   padding: 24px 0px 24px 24px;
@@ -69,8 +85,7 @@ h1, h2, p{
   display: flex;
   flex-direction: column;
   gap: 8px;
-  overflow-y: scroll;
-  height: 90vh;
+
 }
 
 .image-placeholder{
@@ -80,27 +95,38 @@ h1, h2, p{
   border-radius: 8px;
 }
 
+.hero-image{
+  min-height: 700px;
+  margin-bottom: 84px;
+}
+
 .hide{
-  transform: translate(-50%, 110%);
+  transform: translate(-50%,110%);
 }
 
 .inner-modal{
-  height: 100%;
-  padding: 24px;
-  background-color: #fff;
-  border-radius: 16px;
-  /* height: 500px; */
+  padding: 104px 148px;
+  overflow-y: scroll;
+  height: 90vh;
+
+
 }
 
+
+
 .title-modal{
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   font-weight: 400;
+  font-size: 36px;
+  color: #fff;
   
 }
 
 .description-modal{
-  margin-bottom: 16px;
-  color: #808080;
+  margin-bottom: 24px;
+  color: #b7b7b7;
+  font-size: 16px;
+
 }
 
 .project-tags{
@@ -109,11 +135,30 @@ h1, h2, p{
   gap: 8px;
   padding: 0;
   margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.case-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+.case-text h3{
+font-size: 48px;
+font-weight: 400;
+}
+
+.case-text p{
+  font-size: 16px;
 }
 
 .project-tags li{
-  padding: 6px 16px;
-  background-color: #e6e6e6;
+  padding: 12px 24px;
+  background-color: #383838;
+  border: 1px solid #404040;
   border-radius: 100rem;
 }
 
@@ -151,7 +196,8 @@ h1, h2, p{
 
 .name-version-container p{
   padding: 6px 16px;
-  background-color: #505050;
+  background-color: #383838;
+  border: 1px solid #404040;
   border-radius: 100rem;
   width: fit-content;
 }
@@ -160,6 +206,7 @@ h1, h2, p{
   display: flex;
   gap: 24px;
   padding-right: 64px;
+  align-items: center;
 }
 
 .nav-container span{
@@ -171,15 +218,17 @@ h1, h2, p{
 }
 
 .contact-container{
-
   transition: all 0.15s ease;
 }
 
-.site-contact{
+.site-contact-button{
   padding: 12px 24px;
-  background-color: black;
+  border: none;
+  font-size: 16px;
+  background-color:#383838;
   border-radius: 4px;
   color: white;
+  cursor: pointer;
 
 }
 
@@ -288,12 +337,11 @@ h1, h2, p{
   border-radius: 16px;
   transition: all 0.15s ease;
   min-height: 350px;
+  height: fit-content;
   color:#2A4258;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
-  /* width: 350px; */
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 .dark{
   color:black
