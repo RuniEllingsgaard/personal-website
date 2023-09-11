@@ -15,11 +15,17 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@prismicio/client": "^7.2.0",
+    "@prismicio/react": "^2.7.1",
     "gatsby": "^5.11.0",
     "gatsby-plugin-sass": "^6.11.0",
+    "gatsby-source-prismic": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.63.6",
     "swiper": "^10.0.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
   }
 }

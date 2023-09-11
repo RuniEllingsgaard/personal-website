@@ -22,8 +22,8 @@ function Month(props) {
           <button className="modal-close-button" onClick={() => setHide(true)}><img src={close}></img></button>
           <div className="inner-modal">
           <div className="case-intro">
-          <h2 className="title-modal">LEGO Education</h2>
-          <p className="description-modal">Creating a single source of truth across experiences</p>
+          <h2 className="title-modal">{props.title}</h2>
+          <p className="description-modal">{props.description}</p>
           <ul className="project-tags">
             <li>ux/ui</li>
             <li>stakeholder management</li>
@@ -33,7 +33,7 @@ function Month(props) {
           </div>
 
           <div className="hero-image-container">
-            <img src={memiHero}></img>
+            <img src={props.coverImage}></img>
             {/* <div className="image-placeholder hero-image"></div> */}
           </div>
        
@@ -42,27 +42,51 @@ function Month(props) {
             <h3>Brief</h3>
             <p>{props.brief}</p>
             </section>
+          </div>
+
+          <div className="image-grid">
+            {Array.isArray(props.imageSectionOne) && props.imageSectionOne.length > 0 && (
+              props.imageSectionOne.map((image, index) => (
+                <img src={image} alt={`Image ${index + 1}`} key={index} />
+              ))
+            )}
+          </div>
         
+          <div className="case-text-container">
             <section className="case-text">
             <h3>Process</h3>
             <p>{props.process}</p>
             </section>
+          </div>
 
+          <div className="case-text-container">
             <section className="case-text">
             <h3>My Role</h3>
             <p>{props.role}</p>
             </section>
+          </div>
       
+          <div className="case-text-container">
             <section className="case-text">
             <h3>Team</h3>
-            <p>{props.team}</p>
+            <ul>
+            {Array.isArray(props.team) && props.team.length > 0 && (
+              props.team.map((member, index) => (
+                <li>{member}</li>
+              ))
+            )}
+            </ul>
             </section>
           </div>
        
 
-        <div className="image-section">
-          {/* <div className="image-placeholder"></div> */}
-        </div>
+          <div className="image-grid">
+            {Array.isArray(props.imageSectionTwo) && props.imageSectionTwo.length > 0 && (
+              props.imageSectionTwo.map((image, index) => (
+                <img src={image} alt={`Image ${index + 1}`} key={index} />
+              ))
+            )}
+          </div>
         </div>
       </div>
       {/* -----------MODAL END------------- */}
