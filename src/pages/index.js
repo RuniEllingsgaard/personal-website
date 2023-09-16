@@ -48,39 +48,20 @@ import rentButton from "../images/rent/button.png"
 import rentWireframes from "../images/rent/wireframes.png"
 import rentThumb from "../images/rent.svg"
 import rentCover from "../images/rent/rent-cover.png"
+import TopNav from "../components/top-nav"
+import FilterNav from "../components/filter-nav"
 
 
 
 const IndexPage = () => {
   return (
     <div className="app-container">
-      <div className="header">
-        <div className="site-info-container">
-          <div className="name-version-container">
-            <p className="site-name">Runi Baldvinsson</p>
-            <p className="site-version">ver. 3.1</p>
-            <p className="site-position">Partner & Head of Digital Experience @ USE</p>
-          </div>
-          <h1 className="site-title">A senior Digital Product Designer, who codes</h1>
-        </div>
-        <div className="nav-container">
-          <span>About me</span>
-          <div className="contact-container">
-            <button className="site-contact-button">Contact</button>
-          </div>
-        </div>
-      </div>
+      <TopNav/>
+      <FilterNav/>
 
-      <div className="filter-container">
-        <ul className="filter-items">
-          <li className="filter-active">Timeline</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+      
 
       <div className="calendar-container">
-
       <Month 
         date="July 14th."
         year="2023"
@@ -211,21 +192,6 @@ const IndexPage = () => {
         role=""
         team="">
       </Month>
-
-
- 
-
-     
-
- 
-
- 
-
-
-
-
- 
-
       </div>
     </div>
   )

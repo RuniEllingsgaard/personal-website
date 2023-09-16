@@ -18,7 +18,11 @@ function TopNav(){
             <button className="site-contact-button">Contact</button>
           </div>
         </div> */}
+<<<<<<< HEAD
       </div> 
+=======
+      </div>
+>>>>>>> main
 
   )
 }

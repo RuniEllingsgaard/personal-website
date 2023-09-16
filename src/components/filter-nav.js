@@ -11,7 +11,11 @@ function FilterNav(){
             <Link to="/about/" activeClassName="filter-active"><li>About</li></Link>
             <Link to="/contact/" activeClassName="filter-active"><li>Contact</li></Link>
           </ul>
+<<<<<<< HEAD
         </div> 
+=======
+        </div>
+>>>>>>> main
   )
 }
 export default FilterNav;

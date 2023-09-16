@@ -256,6 +256,10 @@ font-weight: 400;
   transform: scale(0.97);
   cursor: pointer;
 }
+.filter-container a{
+  text-decoration: none;
+
+}
 
 
 .filter-container{
@@ -284,6 +288,7 @@ font-weight: 400;
 .filter-container ul li{
   padding: 12px 32px;
   transition: all 0.15s ease;
+  color:#1a1a1a;
 }
 
 .filter-container ul li:hover{
@@ -303,6 +308,8 @@ font-weight: 400;
   border-radius: 100rem;
   color: white;
 }
+
+
 
 .calendar-container{
   display: flex;
@@ -418,6 +425,19 @@ font-weight: 400;
 .title-container h3{
   font-weight: 400;
 
+}
+
+.about-container{
+  display: flex;
+  margin-top: 200px;
+  /* height: 100%; */
+  height: calc(100vh - 274px);
+  margin-left: 64px;
+}
+
+.about-container p{
+  font-size: 28px;
+  max-width: 50%;
 }
 
 
