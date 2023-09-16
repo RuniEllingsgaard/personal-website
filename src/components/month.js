@@ -2,7 +2,6 @@ import * as React from "react"
 import {useState} from "react"
 import "../styles/styles.css"
 import close from "../images/close.svg"
-import memiHero from "../images/MEMI-hero.png"
 
 
 function Month(props) {
@@ -16,6 +15,8 @@ function Month(props) {
         <span className="date">{props.date}</span>
         <span className="year">{props.year}</span>
       </div>
+
+      {/* <CaseModal state={hide} title={props.title} description={props.description} tags={props.tags} coverImage={props.coverImage} brief={props.brief} keyTakeAway={props.keyTakeAway} imageSectionOne={props.imageSectionOne} process={props.process} role={props.role} team={props.team} imageSectionTwo={props.imageSectionTwo}/> */}
        
       {/* -----------MODAL------------- */}
       <div className={`modal ${hide ? "hide" : ""}`}>
@@ -25,22 +26,29 @@ function Month(props) {
           <h2 className="title-modal">{props.title}</h2>
           <p className="description-modal">{props.description}</p>
           <ul className="project-tags">
-            <li>ux/ui</li>
-            <li>stakeholder management</li>
-            <li>research</li>
-            <li>strategy</li>
+            {Array.isArray(props.tags) && props.tags.length > 0 && (
+              props.tags.map((tag, index) => (
+                <li key={index}>{tag}</li>
+              ))
+            )}
           </ul>
           </div>
 
           <div className="hero-image-container">
             <img src={props.coverImage}></img>
-            {/* <div className="image-placeholder hero-image"></div> */}
           </div>
        
           <div className="case-text-container">
             <section className="case-text">
             <h3>Brief</h3>
             <p>{props.brief}</p>
+            </section>
+          </div>
+
+          <div className="case-text-container">
+            <section className="case-text">
+            <h3>Key Take Away</h3>
+            <p>{props.keyTakeAway}</p>
             </section>
           </div>
 
