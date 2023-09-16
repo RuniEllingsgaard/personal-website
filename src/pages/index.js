@@ -52,7 +52,6 @@ import rentCover from "../images/rent/rent-cover.png"
 
 
 const IndexPage = () => {
-
   return (
     <div className="app-container">
       <div className="header">
