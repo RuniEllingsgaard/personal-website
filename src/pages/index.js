@@ -50,6 +50,8 @@ import rentThumb from "../images/rent.svg"
 import rentCover from "../images/rent/rent-cover.png"
 import TopNav from "../components/top-nav"
 import FilterNav from "../components/filter-nav"
+import legoCover from "../images/lego/legocover.png"
+import ikeaCover from "../images/ikea/ikeacover.png"
 
 
 
@@ -65,12 +67,14 @@ const IndexPage = () => {
       <Month 
         date="July 14th."
         year="2023"
+        tags={["Designsystems", "Concept Development", "User-testing", "UX", "UI", "Product Design"]}
         backgroundColor="#E3000B"
         fontColor="bright"
         label="#case"
         caseImage={legologo}
+        coverImage={legoCover}
         title="LEGO Group"
-        description="LEGO Collaboration"
+        description="A half decade of solid and playful collaboration"
         tag=""
         row="three"
         brief="Since 2017 I have been a close collaborator at the LEGO Group, working with over 5 departments. My focus has been on digitizing internal workflows and tools, as well as concepting and designing new customer-facing experiences. While I am proud of this long partnership, I am currently unable to share further information."
@@ -183,6 +187,7 @@ const IndexPage = () => {
         fontColor="bright"
         label="#case"
         caseImage={ikeaLogo}
+        coverImage={ikeaCover}
         title="IKEA"
         description="IKEA"
         tag="#designsystem"

@@ -27,6 +27,10 @@ h1, h2, p{
   line-height: 1.33;
 }
 
+/* a{
+  color: #1a1a1a;
+} */
+
 .modal{
   background-color: #252525;
   border: 1px solid #404040;
@@ -111,6 +115,8 @@ h1, h2, p{
 .hide{
   transform: translate(-50%,110%);
 }
+
+
 
 .inner-modal{
   padding: 104px 148px;
@@ -214,6 +220,7 @@ font-weight: 400;
 
 .name-version-container{
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 8px;
 }
@@ -268,7 +275,6 @@ font-weight: 400;
 
 .filter-container{
   position: fixed;
-  color:#1a1a1a;
   left: 50%;
   transform: translateX(-50%);
   bottom: 24px;
@@ -295,22 +301,16 @@ font-weight: 400;
   color:#1a1a1a;
 }
 
-.filter-container ul li:hover{
-  background-color: #e6e6e6;
-  border-radius: 100rem;
-  cursor: pointer;
-}
+
 
 .filter-active{
   background-color: black;
   border-radius: 100rem;
-  color: white;
+  color: white !important;
 }
 
-.filter-container ul li .filter-active:hover{
-  background-color: black;
-  border-radius: 100rem;
-  color: white;
+.filter-active li{
+  color: white !important;
 }
 
 
@@ -449,6 +449,8 @@ font-weight: 400;
 }
 
 
+
+
 @media only screen and (max-width: 600px) {
 
   .header{
@@ -523,6 +525,7 @@ font-weight: 400;
 
   .filter-container{
     background-color: transparent;
+    box-shadow: none;
   }
 
   .filter-container ul{
@@ -545,6 +548,31 @@ font-weight: 400;
     display: flex;
     align-items: center;
     gap: 4px;
+    cursor: pointer;
+  }
+
+  .menu-toggle img{
+    width: 20px;
+    height: 20px;
+    transition: all 0.1s ease;
+  }
+
+  .rotate{
+    transform: rotate(45deg);
+  }
+
+  .gone{
+    display: none;
+  }
+
+  .filter-active{
+    background-color: white;
+    border-radius: 100rem;
+    color: #1a1a1a;
+  }
+  
+  .filter-active li{
+    color: #1a1a1a !important;
   }
 
 }

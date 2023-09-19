@@ -11,12 +11,6 @@ function TopNav(){
             <p className="site-version">ver. 3.1</p>
           </div>
         </div>
-        {/* <div className="nav-container">
-          <span>About me</span>
-          <div className="contact-container">
-            <button className="site-contact-button">Contact</button>
-          </div>
-        </div> */}
       </div>
 
   )

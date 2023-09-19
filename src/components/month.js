@@ -45,49 +45,63 @@ function Month(props) {
             </section>
           </div>
 
-          <div className="case-text-container">
-            <section className="case-text">
-            <h3>Key Take Away</h3>
-            <p>{props.keyTakeAway}</p>
-            </section>
-          </div>
-
-          <div className="image-grid">
-            {Array.isArray(props.imageSectionOne) && props.imageSectionOne.length > 0 && (
-              props.imageSectionOne.map((image, index) => (
-                <img src={image} alt={`Image ${index + 1}`} key={index} />
-              ))
-            )}
-          </div>
+          {props.keyTakeAway ? 
+            <div className="case-text-container">
+              <section className="case-text">
+                <h3>Key Take Away</h3>
+                <p>{props.keyTakeAway}</p>
+              </section>
+            </div> 
+          : null}
+          
+          {props.imageSectionOne ? 
+            <div className="image-grid">
+              {Array.isArray(props.imageSectionOne) && props.imageSectionOne.length > 0 && (
+                props.imageSectionOne.map((image, index) => (
+                  <img src={image} alt={`Image ${index + 1}`} key={index} />
+                  ))
+              )}
+            </div>
+          : null}
+          
         
+        {props.process ? 
           <div className="case-text-container">
             <section className="case-text">
-            <h3>Process</h3>
-            <p>{props.process}</p>
+              <h3>Process</h3>
+              <p>{props.process}</p>
             </section>
-          </div>
+          </div> 
+        : null}
+          
 
+        {props.role ? 
           <div className="case-text-container">
             <section className="case-text">
-            <h3>My Role</h3>
-            <p>{props.role}</p>
+              <h3>My Role</h3>
+              <p>{props.role}</p>
             </section>
           </div>
+        : null}
+          
       
+        {props.team ? 
           <div className="case-text-container">
             <section className="case-text">
-            <h3>Team</h3>
-            <ul>
-            {Array.isArray(props.team) && props.team.length > 0 && (
-              props.team.map((member, index) => (
-                <li>{member}</li>
-              ))
-            )}
-            </ul>
+              <h3>Team</h3>
+              <ul>
+                {Array.isArray(props.team) && props.team.length > 0 && (
+                  props.team.map((member, index) => (
+                    <li>{member}</li>
+                  ))
+                )}
+              </ul>
             </section>
           </div>
+        : null}
+          
        
-
+        {props.imageSectionTwo ? 
           <div className="image-grid">
             {Array.isArray(props.imageSectionTwo) && props.imageSectionTwo.length > 0 && (
               props.imageSectionTwo.map((image, index) => (
@@ -95,6 +109,8 @@ function Month(props) {
               ))
             )}
           </div>
+        : null}
+          
         </div>
       </div>
       {/* -----------MODAL END------------- */}
