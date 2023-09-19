@@ -16,11 +16,7 @@ function contact() {
       <p>Feel free to reach out on runibaldvinsson@gmail.com</p>
       </div>
      </div>
-<<<<<<< HEAD
-      ) 
-=======
       )
->>>>>>> main
 }
 
 export default contact;

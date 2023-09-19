@@ -20,6 +20,7 @@ body{
 
 h1, h2, h3, p, ul{
   margin: 0;
+  font-weight: 400;
 }
 
 h1, h2, p{
@@ -203,8 +204,11 @@ font-weight: 400;
 }
 
 .site-info-container{
-  padding-left: 64px;
+  display: flex;
+  justify-content: space-between;
+  padding:0 64px;
   font-size: 14px;
+  width: 100vw;
 
 }
 
@@ -437,7 +441,7 @@ font-weight: 400;
 
 .about-container p{
   font-size: 28px;
-  max-width: 50%;
+  max-width: 800px;
 }
 
 
@@ -455,6 +459,10 @@ font-weight: 400;
 
   .site-info-container{
     padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
   
   }
 
@@ -488,6 +496,10 @@ font-weight: 400;
     height: 80vh;
   }
 
+  .image-grid{
+    grid-template-columns: 1fr;
+  }
+
   .case-text-container{
     max-width: 100%;
 
@@ -501,5 +513,33 @@ font-weight: 400;
     margin-bottom: 128px;
   }
 
+  .desktop{
+    display: none;
+  }
+
+  .filter-container{
+    background-color: transparent;
+  }
+
+  .filter-container ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-container ul li{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 100rem;
+  }
+  
+  .about-container{
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .menu-toggle{
+    display: flex;
+    align-items: center;
+  }
 
 }
