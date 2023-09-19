@@ -25,11 +25,9 @@ h1, h2, h3, p, ul{
 
 h1, h2, p{
   line-height: 1.33;
+  font-weight: 400;
 }
 
-/* a{
-  color: #1a1a1a;
-} */
 
 .modal{
   background-color: #252525;
@@ -501,11 +499,16 @@ font-weight: 400;
   
   }
 
+  .filter-container{
+    bottom: 8px;
+    width: fit-content;
+  }
+
   .calendar-container{
     display: flex;
-    margin-top: 150px;
+    margin-top: 205px;
     /* height: 100%; */
-    height: 63vh;
+    height: 54vh;
   }
 
   .month{
@@ -533,6 +536,7 @@ font-weight: 400;
 
   .image-grid{
     grid-template-columns: 1fr;
+    margin-bottom: 48px;
   }
 
   .case-text-container{
@@ -543,9 +547,9 @@ font-weight: 400;
   .case-text{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 24px;
     align-items: center;
-    margin-bottom: 128px;
+    margin-bottom: 48px;
   }
 
   .desktop{
@@ -584,7 +588,9 @@ font-weight: 400;
     margin-right: 24px;
     grid-template-columns: 1fr;
     gap: 24px;
-    margin-bottom: 64px;
+    margin-bottom: 94px;
+    margin-top: 210px;
+    height: fit-content;
   }
 
   .about-container .description{
@@ -622,6 +628,10 @@ font-weight: 400;
   
   .filter-active li{
     color: #1a1a1a !important;
+  }
+
+  .hero-image-container img{
+    margin-bottom: 24px;
   }
 
 }
