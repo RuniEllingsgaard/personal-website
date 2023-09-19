@@ -16,8 +16,6 @@ const openMenu = () =>{
   else{
     setMenuOpen(true);
   }
-  
-  console.log("You clicked the menu");
 }
 
   
@@ -26,8 +24,7 @@ const openMenu = () =>{
           <ul className="filter-items">
            
             <Link className={menuOpen ? "" : "gone"} to="/" activeClassName="filter-active"><li>Timeline</li></Link>
-            <Link className={menuOpen ? "" : "gone"} to="/about/" activeClassName="filter-active"><li>About</li></Link>
-            <Link className={menuOpen ? "" : "gone"} to="/contact/" activeClassName="filter-active"><li>Contact</li></Link>
+            <Link className={menuOpen ? "" : "gone"} to="/about/" activeClassName="filter-active"><li>About & Contact</li></Link>
             <li onClick={openMenu} className="menu-toggle"><img className={menuOpen ? "rotate" : ""} src={add}></img>Menu</li>
           </ul>
         </div>

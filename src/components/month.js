@@ -53,6 +53,15 @@ function Month(props) {
               </section>
             </div> 
           : null}
+
+          {props.role ? 
+          <div className="case-text-container">
+            <section className="case-text">
+              <h3>My Role</h3>
+              <p>{props.role}</p>
+            </section>
+          </div>
+          : null}
           
           {props.imageSectionOne ? 
             <div className="image-grid">
@@ -75,14 +84,7 @@ function Month(props) {
         : null}
           
 
-        {props.role ? 
-          <div className="case-text-container">
-            <section className="case-text">
-              <h3>My Role</h3>
-              <p>{props.role}</p>
-            </section>
-          </div>
-        : null}
+        
           
       
         {props.team ? 

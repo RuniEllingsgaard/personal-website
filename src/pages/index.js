@@ -65,7 +65,7 @@ const IndexPage = () => {
 
       <div className="calendar-container">
       <Month 
-        date="July 14th."
+        date="March 31st."
         year="2023"
         tags={["Designsystems", "Concept Development", "User-testing", "UX", "UI", "Product Design"]}
         backgroundColor="#E3000B"
@@ -74,63 +74,17 @@ const IndexPage = () => {
         caseImage={legologo}
         coverImage={legoCover}
         title="LEGO Group"
-        description="A half decade of solid and playful collaboration"
+        description="More than half a decade of solid and playful collaboration"
         tag=""
         row="three"
-        brief="Since 2017 I have been a close collaborator at the LEGO Group, working with over 5 departments. My focus has been on digitizing internal workflows and tools, as well as concepting and designing new customer-facing experiences. While I am proud of this long partnership, I am currently unable to share further information."
+        brief="Since 2017 I have been a close collaborator at the LEGO Group, working with over 5 departments. My focus has been on digitizing internal workflows and tools, as well as concepting and designing new customer-facing experiences. While I am proud of this long partnership, I am currently unable to share further information due to strict non-disclosure agreements."
         process=""
         role=""
         team="">
       </Month>
 
-      <Month 
-        date="July 14th."
-        year="2023"
-        backgroundColor="#fff"
-        tags={["UX","UI","Concept Development", "Product Strategy", "User Testing", "Design System"]}
-        fontColor="dark"
-        label="#case"
-        keyTakeAway ="Working with Mediehusene Midtjylland proved to me the significance of stakeholder management and internal buy-in when undertaking large-scale organizational digitalization projects. Aligning different teams within an organization can be challenging, but by treating it as one of our primary objectives and using asynchronous video updates, written meeting minutes, and workshops, we were able to cover substantial ground while keeping key stakeholders informed."
-        caseImage={memi}
-        coverImage={memiCover}
-        title="Mediehusene Midtjylland"
-        description="Breathing life into a struggling platform - Made at my time at USE Agency"
-        tag=""
-        row="one"
-        imageSectionOne={[desktopMockup, mobileMockup1, mobileMockup2, menuMockup]}
-        imageSectionTwo={[workshop, research, memiWireframes]}
-        brief="Mediehusene Midtjylland faced a customer decline issue as their readership aged, struggling to attract new and younger subscribers to their platform. Their digital experiences was neglected and missed a lot of the modern functionalities a younger readership expects. We worked on a total redesign of the user experience of their main news outlets, their native app, their onboarding and payment flows. We also worked closely with the internal team to concept and launch 5+ niche microsites to test new businessmodels and reach new readership."
-        process="To contextualize the local newspapers, we conducted extensive user research in the surrounding areas to understand news consumption habits. This research formed the foundation for all future design efforts. We redesigned their online newspaper, launched 5+ local MVP micro online newspapers, and rebuilt their app from scratch. Mediehusene Midtjylland is still on their digital journey, working diligently to launch all of these efforts and embrace their digital transformation."
-        role="I took charge of the overall UX and UI design, leading the project with workshops and user tests to ensure a seamless and user-centric experience."
-        team={["Ari Marteinsson - User Research", "Niels Konrad Bisgaard - UX/UI", "Melanie Nissen - UX/UI", "Martyna Buje - Illustrations"]}>
-      </Month>
-
       <Month
-        date="July 14th."
-        year="2023"
-        backgroundColor=""
-        backgroundImage={lovefuelBG}
-        imageSectionOne={[loveIcon, loveScreens, loveMock1, loveButton]}
-        imageSectionTwo={[loveSelect, loveDiagram, lovePost, loveWireframes]}
-        tags={["UX","UI"]}
-        keyTakeAway="My experience working with LoveFuel encouraged me to ask a lot of seemingly 'stupid' questions and 
-        why’s. This approach accelerated the process and really underscored the importance of not being afraid to look stupid and ask the obvious questions. Often, significant value can come from these seemingly mundane questions, especially as complexity and features become more prominent."
-        fontColor="dark"
-        label="#case"
-        caseImage={lovefuelLogo}
-        coverImage={loveCover}
-        title="LoveFuel"
-        description="Helping an AI startup simplify their digital experience"
-        tag="#designsystem"
-        row="three"
-        brief="LoveFuel approached us with an AI assistant designed to enhance romantic relationships, but they were facing usability issues. User testing revealed a steep learning curve to unlock the product's full potential. Our task was to simplify the user experience and make the app more intuitive for a non-technical user base. What initially appeared as a straightforward assignment ultimately led us to redesign the app's core user flows while preserving the depth of its features."
-        process={"To gain a comprehensive understanding of LoveFuel's product and its competitive landscape, we installed the app on our phones alongside several of its major competitors. This allowed us to analyze how other companies approached common UX patterns in the relationship market. We meticulously mapped out the functions and flows of various apps, deconstructing LoveFuel's features to assess their complexity. Subsequently, we created different wireframes and collaborated with the LoveFuel team to develop and test our new designs with their users, even while they were still a work in progress. This iterative approach enabled us to make informed decisions rapidly. As a result, we successfully redesigned the entire app, a move that secured them additional funding just a month later."}
-        role="I served as the lead designer and project manager for this initiative. In my role, I led the design efforts, established priorities, maintained communication with the LoveFuel team, and ensured that we adhered to our budget and timelines."
-        team={["Sofie Grønberg - UX/UI design"]}>
-      </Month>
-
-      <Month
-        date="July 14th."
+        date="February 16th."
         year="2023"
         backgroundColor=""
         backgroundImage={coCodersGradient}
@@ -142,21 +96,43 @@ const IndexPage = () => {
         keyTakeAway="Eliminating meetings and adopting asynchronous work strategies can significantly enhance productivity in the right contexts. It allowed us to accelerate our progress and dedicate more time to design rather than being tied up in meetings. Additionally, it empowered the Co-Coders team to provide clearer, more detailed, and well-thought-out feedback. They no longer needed to generate feedback on the spot during video calls or meetings; instead, they could thoroughly review the delivered material before offering their insights."
         tags={["UX","UI", "Async Work", "Illustrations"]}
         label="#case"
-        title="CoCoders"
+        title="Co-Coders"
         description="Helping denmark's only female first coding start-up, make coding less intimidating"
         tag="#designsystem"
-        row="two"
+        row="one"
         brief="Co-coders initially began as a physical community of women eager to learn coding. When they approached us with the vision of creating Denmark's first female-centric coding platform as a web app, we were enthusiastic to assist. However, with their release date just weeks away, we needed to devise efficient workflows for a rapid development and delivery process. By eliminating meetings and embracing asynchronous communication, we successfully designed their web app in just five days."
         process="Before commencing the project, we, in collaboration with the Co-Coders team, established a list of priorities. Throughout the day, we tackled various tasks and shared video updates with the Co-Coders team by day's end. They, in turn, provided feedback in the evening, ensuring that we could start each morning with momentum. Given our tight deadline of just five days for the web app design, we opted for well-tested standard UX patterns, focusing on creating an approachable and user-friendly UI.
 
         We developed a flexible color system with gradients for larger surfaces and complemented it with bold buttons and cards to infuse personality into the user experience."
         role="I served as the lead designer and project manager for this initiative. In my role, I led the design efforts, established priorities, maintained communication with the Co-Coders team, and ensured that we could deliver within our five day timeframe."
-        team={["Sofie Grønberg - UX/UI"]}>
+        team={["Runi Baldvinsson - Project Manager & Lead Digital Designer","Sofie Grønberg - UX/UI"]}>
+      </Month>
+
+      <Month 
+        date="December 10th."
+        year="2022"
+        backgroundColor="#fff"
+        tags={["UX","UI","Concept Development", "Product Strategy", "User Testing", "Design System"]}
+        fontColor="dark"
+        label="#case"
+        keyTakeAway ="Working with Mediehusene Midtjylland proved to me the significance of stakeholder management and internal buy-in when undertaking large-scale organizational digitalization projects. Aligning different teams within an organization can be challenging, but by treating it as one of our primary objectives and using asynchronous video updates, written meeting minutes, and workshops, we were able to cover substantial ground while keeping key stakeholders informed."
+        caseImage={memi}
+        coverImage={memiCover}
+        title="Mediehusene Midtjylland"
+        description="Breathing life into a struggling platform - Made at my time at USE Agency"
+        tag=""
+        row="two"
+        imageSectionOne={[desktopMockup, mobileMockup1, mobileMockup2, menuMockup]}
+        imageSectionTwo={[workshop, research, memiWireframes]}
+        brief="Mediehusene Midtjylland faced a customer decline issue as their readership aged, struggling to attract new and younger subscribers to their platform. Their digital experiences was neglected and missed a lot of the modern functionalities a younger readership expects. We worked on a total redesign of the user experience of their main news outlets, their native app, their onboarding and payment flows. We also worked closely with the internal team to concept and launch 5+ niche microsites to test new businessmodels and reach new readership."
+        process="To contextualize the local newspapers, we conducted extensive user research in the surrounding areas to understand news consumption habits. This research formed the foundation for all future design efforts. We redesigned their online newspaper, launched 5+ local MVP micro online newspapers, and rebuilt their app from scratch. Mediehusene Midtjylland is still on their digital journey, working diligently to launch all of these efforts and embrace their digital transformation."
+        role="I took charge of the overall UX and UI design, leading the project with workshops and user tests to ensure a seamless and user-centric experience."
+        team={["Runi Baldvinsson - Project Manager & Lead Digital Designer","Ari Marteinsson - User Research", "Niels Konrad Bisgaard - UX/UI", "Melanie Nissen - UX/UI", "Martyna Buje - Illustrations"]}>
       </Month>
 
       <Month
-        date="July 14th."
-        year="2023"
+        date="November 25th."
+        year="2022"
         label="#case"
         title="RENT by WhiteAway Group"
         backgroundColor="#0D3831"
@@ -176,12 +152,40 @@ const IndexPage = () => {
 
         In partnership with their internal content team, we focused on creating a straightforward and intuitive understanding of their product. Development had to start early to ensure enough time for testing and bug fixing, which meant we had to be very structured to determining which components were ready for development, while remaining open to rapid decision-making when dealing with edge cases."
         role="I led the project, overseeing communication and scoping with both the internal WhiteAway team and the external development team, while also being a part of the design execution."
-        team={["Rene Sørensen - Branding", "Sofie Grønberg - UX/UI"]}>
+        team={["Runi Baldvinsson - Project Manager & Lead Digital Designer","Rene Sørensen - Branding", "Sofie Grønberg - UX/UI"]}>
       </Month>
 
+      
       <Month
-        date="July 14th."
-        year="2023"
+        date="October 14th."
+        year="2022"
+        backgroundColor=""
+        backgroundImage={lovefuelBG}
+        imageSectionOne={[loveIcon, loveScreens, loveMock1, loveButton]}
+        imageSectionTwo={[loveSelect, loveDiagram, lovePost, loveWireframes]}
+        tags={["UX","UI"]}
+        keyTakeAway="My experience working with LoveFuel encouraged me to ask a lot of seemingly 'stupid' questions and 
+        why’s. This approach accelerated the process and really underscored the importance of not being afraid to look stupid and ask the obvious questions. Often, significant value can come from these seemingly mundane questions, especially as complexity and features become more prominent."
+        fontColor="dark"
+        label="#case"
+        caseImage={lovefuelLogo}
+        coverImage={loveCover}
+        title="LoveFuel"
+        description="Helping an AI startup simplify their digital experience"
+        tag="#designsystem"
+        row="one"
+        brief="LoveFuel approached us with an AI assistant designed to enhance romantic relationships, but they were facing usability issues. User testing revealed a steep learning curve to unlock the product's full potential. Our task was to simplify the user experience and make the app more intuitive for a non-technical user base. What initially appeared as a straightforward assignment ultimately led us to redesign the app's core user flows while preserving the depth of its features."
+        process={"To gain a comprehensive understanding of LoveFuel's product and its competitive landscape, we installed the app on our phones alongside several of its major competitors. This allowed us to analyze how other companies approached common UX patterns in the relationship market. We meticulously mapped out the functions and flows of various apps, deconstructing LoveFuel's features to assess their complexity. Subsequently, we created different wireframes and collaborated with the LoveFuel team to develop and test our new designs with their users, even while they were still a work in progress. This iterative approach enabled us to make informed decisions rapidly. As a result, we successfully redesigned the entire app, a move that secured them additional funding just a month later."}
+        role="I served as the lead designer and project manager for this initiative. In my role, I led the design efforts, established priorities, maintained communication with the LoveFuel team, and ensured that we adhered to our budget and timelines."
+        team={["Runi Baldvinsson - Project Manager & Lead Digital Designer","Sofie Grønberg - UX/UI design"]}>
+      </Month>
+
+
+      
+
+      <Month
+        date="August 28th."
+        year="2022"
         backgroundColor="#0058AB"
         backgroundImage=""
         fontColor="bright"
@@ -189,10 +193,10 @@ const IndexPage = () => {
         caseImage={ikeaLogo}
         coverImage={ikeaCover}
         title="IKEA"
-        description="IKEA"
-        tag="#designsystem"
-        row="one"
-        brief="yoyo"
+        description="Exploring new ventures with rapid proof of experiences"
+        tags={["Proof Of Experience", "Innovation", "Rapid Prototyping"]}
+        row="two"
+        brief="I had the privilege of participating in a rapid prototyping assignment for IKEA, where our mission was to create quick conceptual prototypes exploring new business ventures that could leverage IKEA's existing logistics and infrastructure. We presented a range of 'proof of experience' concepts designed for internal use.Due to NDA’s I can’t share further information."
         process=""
         role=""
         team="">

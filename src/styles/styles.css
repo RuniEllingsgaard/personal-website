@@ -108,7 +108,7 @@ h1, h2, p{
 
 .hero-image-container img{
   max-width: 100%;
-  border-radius: 16px;
+  border-radius: 8px;
   margin-bottom: 128px;
 }
 
@@ -119,7 +119,7 @@ h1, h2, p{
 
 
 .inner-modal{
-  padding: 104px 148px;
+  padding: 64px 148px;
   overflow-y: scroll;
   height: 90vh;
 
@@ -204,15 +204,14 @@ font-weight: 400;
   width: 100vw;
   max-width: inherit;
   position: fixed;
-  top: 24px;
- 
-  /* padding: 0px 64px */
+  top: 0px;
+  background-color: #1a1a1a;
 }
 
 .site-info-container{
   display: flex;
   justify-content: space-between;
-  padding:0 64px;
+  padding:24px 64px;
   font-size: 14px;
   width: 100vw;
 
@@ -432,20 +431,50 @@ font-weight: 400;
 }
 
 .about-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
   margin-top: 200px;
   /* height: 100%; */
   height: calc(100vh - 274px);
   margin-left: 64px;
+  margin-right: 64px;
+  margin-bottom: 64px;
 }
 
-.about-container p{
+.description{
   font-size: 28px;
-  max-width: 800px;
+}
+
+.about-container ul{
+  padding: 0px;
+}
+
+.about-container ul li{
+  font-size: 14px;
+  list-style-type: none;
+  font-weight: 400;
+}
+
+.about-container ul li a{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about-container ul li a:hover{
+  text-decoration: none;
+}
+.personal-info{
+  font-size: 14px;
 }
 
 .menu-toggle{
   display: none;
+}
+
+.column-title{
+  font-size: 14px;
+  margin-bottom: 24px;
 }
 
 
@@ -455,7 +484,7 @@ font-weight: 400;
 
   .header{
     display: block;
-    top:16px;
+    top:0px;
   }
 
   .nav-container{
@@ -526,6 +555,17 @@ font-weight: 400;
   .filter-container{
     background-color: transparent;
     box-shadow: none;
+   
+  }
+
+  .filter-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-items li{
+    width: fit-content;
   }
 
   .filter-container ul{
@@ -542,13 +582,22 @@ font-weight: 400;
   .about-container{
     margin-left: 24px;
     margin-right: 24px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 64px;
   }
+
+  .about-container .description{
+    font-size: 20px;
+  }
+
 
   .menu-toggle{
     display: flex;
     align-items: center;
     gap: 4px;
     cursor: pointer;
+    width: fit-content;
   }
 
   .menu-toggle img{
